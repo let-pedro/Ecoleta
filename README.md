@@ -6,7 +6,7 @@
  
  
  <div>
-  <img height="480em"  width="280em" src="https://github.com/let-pedro/assets/blob/main/Ecoleta/launch.png"/>  
+  <img height="480em"  width="220em" src="https://github.com/let-pedro/assets/blob/main/Ecoleta/launch.png"/>  
   <img height="180em" src="https://github.com/let-pedro/assets/blob/main/Ecoleta/initial.png"/>
   <img height="180em" src="https://github.com/let-pedro/assets/blob/main/Ecoleta/Details.png"/>
 </div>
