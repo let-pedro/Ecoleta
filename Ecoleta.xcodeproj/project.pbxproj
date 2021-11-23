@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F382E0C12726F1D20091327D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F382E0C02726F1D20091327D /* AppDelegate.swift */; };
+		F382E0C32726F1D20091327D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F382E0C22726F1D20091327D /* SceneDelegate.swift */; };
+		F382E0CA2726F1D40091327D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F382E0C92726F1D40091327D /* Assets.xcassets */; };
+		F382E0CD2726F1D40091327D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F382E0CB2726F1D40091327D /* LaunchScreen.storyboard */; };
+		F382E0D82726F1D40091327D /* EcoletaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F382E0D72726F1D40091327D /* EcoletaTests.swift */; };
+		F382E0E32726F1D50091327D /* EcoletaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F382E0E22726F1D50091327D /* EcoletaUITests.swift */; };
+		F382E1002726F3250091327D /* RegionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F382E0FF2726F3250091327D /* RegionService.swift */; };
+		F382E1082726F3370091327D /* CollectorPointService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F382E1072726F3370091327D /* CollectorPointService.swift */; };
+		F392C03F274BC03D0065AB80 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F392C03E274BC03D0065AB80 /* Utilities.swift */; };
+		F3CF0FFD272985D700F639E4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF0FFC272985D700F639E4 /* Location.swift */; };
+		F3CF1002272985E800F639E4 /* CollectorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF1001272985E800F639E4 /* CollectorPoint.swift */; };
+		F3CF1007272985F700F639E4 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF1006272985F700F639E4 /* State.swift */; };
+		F3CF100C2729860100F639E4 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF100B2729860100F639E4 /* City.swift */; };
+		F3CF1018272986A900F639E4 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF1017272986A900F639E4 /* DetailsView.swift */; };
+		F3CF10202729871A00F639E4 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF101F2729871A00F639E4 /* DetailsVC.swift */; };
+		F3CF1028272987D400F639E4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF1027272987D400F639E4 /* HomeView.swift */; };
+		F3CF102D2729883900F639E4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF102C2729883900F639E4 /* HomeVC.swift */; };
+		F3CF1032272988C400F639E4 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF1031272988C400F639E4 /* HomeVM.swift */; };
+		F3CF1037272988F600F639E4 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF1036272988F600F639E4 /* InitialView.swift */; };
+		F3CF103C272989D700F639E4 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF103B272989D700F639E4 /* InitialVC.swift */; };
+		F3CF104127298ABC00F639E4 /* InitialVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF104027298ABC00F639E4 /* InitialVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F382E0D42726F1D40091327D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F382E0B52726F1D10091327D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F382E0BC2726F1D20091327D;
+			remoteInfo = Ecoleta;
+		};
+		F382E0DF2726F1D50091327D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F382E0B52726F1D10091327D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F382E0BC2726F1D20091327D;
+			remoteInfo = Ecoleta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F382E0BD2726F1D20091327D /* Ecoleta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecoleta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F382E0C02726F1D20091327D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F382E0C22726F1D20091327D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F382E0C92726F1D40091327D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F382E0CC2726F1D40091327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F382E0CE2726F1D40091327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F382E0D32726F1D40091327D /* EcoletaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoletaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F382E0D72726F1D40091327D /* EcoletaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoletaTests.swift; sourceTree = "<group>"; };
+		F382E0D92726F1D40091327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F382E0DE2726F1D50091327D /* EcoletaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoletaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F382E0E22726F1D50091327D /* EcoletaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoletaUITests.swift; sourceTree = "<group>"; };
+		F382E0E42726F1D50091327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F382E0FF2726F3250091327D /* RegionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionService.swift; sourceTree = "<group>"; };
+		F382E1072726F3370091327D /* CollectorPointService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorPointService.swift; sourceTree = "<group>"; };
+		F392C03E274BC03D0065AB80 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F3CF0FFC272985D700F639E4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F3CF1001272985E800F639E4 /* CollectorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorPoint.swift; sourceTree = "<group>"; };
+		F3CF1006272985F700F639E4 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		F3CF100B2729860100F639E4 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		F3CF1017272986A900F639E4 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		F3CF101F2729871A00F639E4 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		F3CF1027272987D400F639E4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F3CF102C2729883900F639E4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F3CF1031272988C400F639E4 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		F3CF1036272988F600F639E4 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		F3CF103B272989D700F639E4 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
+		F3CF104027298ABC00F639E4 /* InitialVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F382E0BA2726F1D20091327D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F382E0D02726F1D40091327D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F382E0DB2726F1D50091327D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F382E0B42726F1D10091327D = {
+			isa = PBXGroup;
+			children = (
+				F382E0BF2726F1D20091327D /* Ecoleta */,
+				F382E0D62726F1D40091327D /* EcoletaTests */,
+				F382E0E12726F1D50091327D /* EcoletaUITests */,
+				F382E0BE2726F1D20091327D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F382E0BE2726F1D20091327D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F382E0BD2726F1D20091327D /* Ecoleta.app */,
+				F382E0D32726F1D40091327D /* EcoletaTests.xctest */,
+				F382E0DE2726F1D50091327D /* EcoletaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F382E0BF2726F1D20091327D /* Ecoleta */ = {
+			isa = PBXGroup;
+			children = (
+				F382E0FA2726F23F0091327D /* Application */,
+				F382E0F92726F2350091327D /* Resources */,
+				F382E0F82726F2270091327D /* Models */,
+				F382E0F72726F21B0091327D /* Scenes */,
+				F382E0CE2726F1D40091327D /* Info.plist */,
+			);
+			path = Ecoleta;
+			sourceTree = "<group>";
+		};
+		F382E0D62726F1D40091327D /* EcoletaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F382E0D72726F1D40091327D /* EcoletaTests.swift */,
+				F382E0D92726F1D40091327D /* Info.plist */,
+			);
+			path = EcoletaTests;
+			sourceTree = "<group>";
+		};
+		F382E0E12726F1D50091327D /* EcoletaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F382E0E22726F1D50091327D /* EcoletaUITests.swift */,
+				F382E0E42726F1D50091327D /* Info.plist */,
+			);
+			path = EcoletaUITests;
+			sourceTree = "<group>";
+		};
+		F382E0F72726F21B0091327D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF10132729865100F639E4 /* Launch */,
+				F3CF10152729867500F639E4 /* Initial */,
+				F3CF10162729867E00F639E4 /* Home */,
+				F3CF10142729865C00F639E4 /* Details */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F382E0F82726F2270091327D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF1006272985F700F639E4 /* State.swift */,
+				F3CF100B2729860100F639E4 /* City.swift */,
+				F3CF0FFC272985D700F639E4 /* Location.swift */,
+				F3CF1001272985E800F639E4 /* CollectorPoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F382E0F92726F2350091327D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F382E0FE2726F30F0091327D /* Network */,
+				F392C03E274BC03D0065AB80 /* Utilities.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F382E0FA2726F23F0091327D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F382E0C02726F1D20091327D /* AppDelegate.swift */,
+				F382E0C22726F1D20091327D /* SceneDelegate.swift */,
+				F382E0C92726F1D40091327D /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F382E0FE2726F30F0091327D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F382E0FF2726F3250091327D /* RegionService.swift */,
+				F382E1072726F3370091327D /* CollectorPointService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F3CF10132729865100F639E4 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				F382E0CB2726F1D40091327D /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		F3CF10142729865C00F639E4 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF1017272986A900F639E4 /* DetailsView.swift */,
+				F3CF101F2729871A00F639E4 /* DetailsVC.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		F3CF10152729867500F639E4 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF1036272988F600F639E4 /* InitialView.swift */,
+				F3CF103B272989D700F639E4 /* InitialVC.swift */,
+				F3CF104027298ABC00F639E4 /* InitialVM.swift */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		F3CF10162729867E00F639E4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF1027272987D400F639E4 /* HomeView.swift */,
+				F3CF102C2729883900F639E4 /* HomeVC.swift */,
+				F3CF1031272988C400F639E4 /* HomeVM.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F382E0BC2726F1D20091327D /* Ecoleta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F382E0E72726F1D50091327D /* Build configuration list for PBXNativeTarget "Ecoleta" */;
+			buildPhases = (
+				F382E0B92726F1D20091327D /* Sources */,
+				F382E0BA2726F1D20091327D /* Frameworks */,
+				F382E0BB2726F1D20091327D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ecoleta;
+			productName = Ecoleta;
+			productReference = F382E0BD2726F1D20091327D /* Ecoleta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F382E0D22726F1D40091327D /* EcoletaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F382E0EA2726F1D50091327D /* Build configuration list for PBXNativeTarget "EcoletaTests" */;
+			buildPhases = (
+				F382E0CF2726F1D40091327D /* Sources */,
+				F382E0D02726F1D40091327D /* Frameworks */,
+				F382E0D12726F1D40091327D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F382E0D52726F1D40091327D /* PBXTargetDependency */,
+			);
+			name = EcoletaTests;
+			productName = EcoletaTests;
+			productReference = F382E0D32726F1D40091327D /* EcoletaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F382E0DD2726F1D50091327D /* EcoletaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F382E0ED2726F1D50091327D /* Build configuration list for PBXNativeTarget "EcoletaUITests" */;
+			buildPhases = (
+				F382E0DA2726F1D50091327D /* Sources */,
+				F382E0DB2726F1D50091327D /* Frameworks */,
+				F382E0DC2726F1D50091327D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F382E0E02726F1D50091327D /* PBXTargetDependency */,
+			);
+			name = EcoletaUITests;
+			productName = EcoletaUITests;
+			productReference = F382E0DE2726F1D50091327D /* EcoletaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F382E0B52726F1D10091327D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F382E0BC2726F1D20091327D = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					F382E0D22726F1D40091327D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F382E0BC2726F1D20091327D;
+					};
+					F382E0DD2726F1D50091327D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F382E0BC2726F1D20091327D;
+					};
+				};
+			};
+			buildConfigurationList = F382E0B82726F1D10091327D /* Build configuration list for PBXProject "Ecoleta" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F382E0B42726F1D10091327D;
+			productRefGroup = F382E0BE2726F1D20091327D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F382E0BC2726F1D20091327D /* Ecoleta */,
+				F382E0D22726F1D40091327D /* EcoletaTests */,
+				F382E0DD2726F1D50091327D /* EcoletaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F382E0BB2726F1D20091327D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F382E0CD2726F1D40091327D /* LaunchScreen.storyboard in Resources */,
+				F382E0CA2726F1D40091327D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F382E0D12726F1D40091327D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F382E0DC2726F1D50091327D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F382E0B92726F1D20091327D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CF103C272989D700F639E4 /* InitialVC.swift in Sources */,
+				F3CF1018272986A900F639E4 /* DetailsView.swift in Sources */,
+				F382E0C12726F1D20091327D /* AppDelegate.swift in Sources */,
+				F3CF100C2729860100F639E4 /* City.swift in Sources */,
+				F3CF1032272988C400F639E4 /* HomeVM.swift in Sources */,
+				F382E0C32726F1D20091327D /* SceneDelegate.swift in Sources */,
+				F3CF1037272988F600F639E4 /* InitialView.swift in Sources */,
+				F3CF104127298ABC00F639E4 /* InitialVM.swift in Sources */,
+				F3CF1002272985E800F639E4 /* CollectorPoint.swift in Sources */,
+				F3CF1028272987D400F639E4 /* HomeView.swift in Sources */,
+				F392C03F274BC03D0065AB80 /* Utilities.swift in Sources */,
+				F382E1002726F3250091327D /* RegionService.swift in Sources */,
+				F3CF0FFD272985D700F639E4 /* Location.swift in Sources */,
+				F382E1082726F3370091327D /* CollectorPointService.swift in Sources */,
+				F3CF102D2729883900F639E4 /* HomeVC.swift in Sources */,
+				F3CF1007272985F700F639E4 /* State.swift in Sources */,
+				F3CF10202729871A00F639E4 /* DetailsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F382E0CF2726F1D40091327D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F382E0D82726F1D40091327D /* EcoletaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F382E0DA2726F1D50091327D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F382E0E32726F1D50091327D /* EcoletaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F382E0D52726F1D40091327D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F382E0BC2726F1D20091327D /* Ecoleta */;
+			targetProxy = F382E0D42726F1D40091327D /* PBXContainerItemProxy */;
+		};
+		F382E0E02726F1D50091327D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F382E0BC2726F1D20091327D /* Ecoleta */;
+			targetProxy = F382E0DF2726F1D50091327D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F382E0CB2726F1D40091327D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F382E0CC2726F1D40091327D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F382E0E52726F1D50091327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F382E0E62726F1D50091327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F382E0E82726F1D50091327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Ecoleta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Ecoleta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F382E0E92726F1D50091327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Ecoleta/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Ecoleta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F382E0EB2726F1D50091327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoletaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EcoletaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecoleta.app/Ecoleta";
+			};
+			name = Debug;
+		};
+		F382E0EC2726F1D50091327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoletaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EcoletaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecoleta.app/Ecoleta";
+			};
+			name = Release;
+		};
+		F382E0EE2726F1D50091327D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoletaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EcoletaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ecoleta;
+			};
+			name = Debug;
+		};
+		F382E0EF2726F1D50091327D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoletaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EcoletaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ecoleta;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F382E0B82726F1D10091327D /* Build configuration list for PBXProject "Ecoleta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F382E0E52726F1D50091327D /* Debug */,
+				F382E0E62726F1D50091327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F382E0E72726F1D50091327D /* Build configuration list for PBXNativeTarget "Ecoleta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F382E0E82726F1D50091327D /* Debug */,
+				F382E0E92726F1D50091327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F382E0EA2726F1D50091327D /* Build configuration list for PBXNativeTarget "EcoletaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F382E0EB2726F1D50091327D /* Debug */,
+				F382E0EC2726F1D50091327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F382E0ED2726F1D50091327D /* Build configuration list for PBXNativeTarget "EcoletaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F382E0EE2726F1D50091327D /* Debug */,
+				F382E0EF2726F1D50091327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F382E0B52726F1D10091327D /* Project object */;
+}
