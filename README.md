@@ -1,8 +1,6 @@
 # ♻️ Ecoleta
- Aplicativo de pontos de coletar de materiais recicláveis
+ Aplicativo de pontos de coletar de materiais recicláveis. - APLICATIVO EM DESENVOLVIMENTO
  
- 
-React Native
  
  
  <div aling="center">
