@@ -22,4 +22,6 @@ O projeto Ecoleta foi desenvolvindo em um evento da Rocketseat o Next Level Week
 
 # 🖌 Layout
 
-O layout do aplicativo e disponibilizado pela Rocketseat no evento é pode ser acessado pelo ![figma](https://www.figma.com/file/9TlOcj6l7D05fZhU12xWT3/Ecoleta-(Booster)?node-id=0%3A1). 
+O layout do aplicativo e disponibilizado pela Rocketseat no evento é pode ser acessado pelo <a src="https://www.figma.com/file/9TlOcj6l7D05fZhU12xWT3/Ecoleta-(Booster)?node-id=0%3A1"><p>Figma</p</a>.
+
+![figma](https://www.figma.com/file/9TlOcj6l7D05fZhU12xWT3/Ecoleta-(Booster)?node-id=0%3A1). 
