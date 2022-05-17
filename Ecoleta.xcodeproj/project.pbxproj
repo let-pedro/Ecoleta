@@ -19,6 +19,7 @@
 		F3AF85A2283336FE008F8628 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF85A1283336FE008F8628 /* HomeCoordinator.swift */; };
 		F3AF85AB283339F4008F8628 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF85AA283339F4008F8628 /* Service.swift */; };
 		F3AF85B628333EEB008F8628 /* homeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF85B528333EEB008F8628 /* homeService.swift */; };
+		F3AF85C228334288008F8628 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AF85C128334288008F8628 /* AppCoordinator.swift */; };
 		F3CF0FFD272985D700F639E4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF0FFC272985D700F639E4 /* Location.swift */; };
 		F3CF1002272985E800F639E4 /* CollectorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF1001272985E800F639E4 /* CollectorPoint.swift */; };
 		F3CF1007272985F700F639E4 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CF1006272985F700F639E4 /* State.swift */; };
@@ -69,6 +70,7 @@
 		F3AF85A1283336FE008F8628 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		F3AF85AA283339F4008F8628 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		F3AF85B528333EEB008F8628 /* homeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeService.swift; sourceTree = "<group>"; };
+		F3AF85C128334288008F8628 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F3CF0FFC272985D700F639E4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F3CF1001272985E800F639E4 /* CollectorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectorPoint.swift; sourceTree = "<group>"; };
 		F3CF1006272985F700F639E4 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F382E0FA2726F23F0091327D /* Application */,
+				F3AF85C028334270008F8628 /* CoordinatorMain */,
 				F382E0F92726F2350091327D /* Resources */,
 				F382E0F82726F2270091327D /* Models */,
 				F382E0F72726F21B0091327D /* Scenes */,
@@ -161,9 +164,8 @@
 		F382E0F72726F21B0091327D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F3AF8547283322D7008F8628 /* Initial */,
 				F3CF10132729865100F639E4 /* Launch */,
-				F3CF10152729867500F639E4 /* Initiall */,
+				F3CF10152729867500F639E4 /* Initial */,
 				F3CF10162729867E00F639E4 /* Home */,
 				F3CF10142729865C00F639E4 /* Details */,
 			);
@@ -197,13 +199,6 @@
 				F382E0C92726F1D40091327D /* Assets.xcassets */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		F3AF8547283322D7008F8628 /* Initial */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Initial;
 			sourceTree = "<group>";
 		};
 		F3AF857C28333185008F8628 /* View */ = {
@@ -272,6 +267,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		F3AF85C028334270008F8628 /* CoordinatorMain */ = {
+			isa = PBXGroup;
+			children = (
+				F3AF85C128334288008F8628 /* AppCoordinator.swift */,
+			);
+			path = CoordinatorMain;
+			sourceTree = "<group>";
+		};
 		F3CF10132729865100F639E4 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,7 +293,7 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
-		F3CF10152729867500F639E4 /* Initiall */ = {
+		F3CF10152729867500F639E4 /* Initial */ = {
 			isa = PBXGroup;
 			children = (
 				F3AF85A9283339DF008F8628 /* Network */,
@@ -298,7 +301,7 @@
 				F3AF857C28333185008F8628 /* View */,
 				F3AF859A283335AE008F8628 /* Coordinator */,
 			);
-			path = Initiall;
+			path = Initial;
 			sourceTree = "<group>";
 		};
 		F3CF10162729867E00F639E4 /* Home */ = {
@@ -447,6 +450,7 @@
 				F3CF100C2729860100F639E4 /* City.swift in Sources */,
 				F3CF1032272988C400F639E4 /* HomeViewModel.swift in Sources */,
 				F382E0C32726F1D20091327D /* SceneDelegate.swift in Sources */,
+				F3AF85C228334288008F8628 /* AppCoordinator.swift in Sources */,
 				F3CF1037272988F600F639E4 /* InitialView.swift in Sources */,
 				F3CF104127298ABC00F639E4 /* InitialViewModel.swift in Sources */,
 				F3AF85AB283339F4008F8628 /* Service.swift in Sources */,

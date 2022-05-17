@@ -1,9 +1,3 @@
-//
-//  HomeCoordinator.swift
-//  Ecoleta
-//
-//  Created by Development IOS on 16/05/22.
-//
 
 import Foundation
 import UIKit
