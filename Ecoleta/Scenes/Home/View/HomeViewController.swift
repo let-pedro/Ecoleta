@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-class HomeVC: UIViewController {
+class HomeViewController: UIViewController {
     
     private var homeView: HomeView
     private let viewModel: HomeVM
@@ -50,7 +50,6 @@ class HomeVC: UIViewController {
         homeView.typeOfCollections.frame =  view.bounds
         homeView.typeOfCollections.delegate = self
         homeView.typeOfCollections.dataSource = self
-        
         homeView.mapView.delegate = self
     }
     

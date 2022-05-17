@@ -1,6 +1,6 @@
 import Foundation
 
-class HomeVM {
+class HomeViewModel {
     
     private var service: CollectorPointService
     var pointsList: [CollectorPoint] = []

@@ -3,6 +3,13 @@ import MessageUI
 import Contacts
 import ContactsUI
 
+
+protocol DetailsViewControllerDelegate {
+    func sendEmail(_ viewController: UIViewController)
+    
+    
+}
+
 class DetailsVC: UIViewController {
     
     private var DetailsView: DetailsView

@@ -1,18 +1,18 @@
+
 import Foundation
 
 
-final class CollectorPointService{
-    
-    static let shared = CollectorPointService()
-    private let urlApi = URL(string: "http://127.0.0.1:8000/CollectionPoint/")!
+struct HomeService {
+
+    private let urlApi = URL(string: "http://127.0.0.1:8000/CollectionPoint/")
     
     func getAll(completion: @escaping (Result<[CollectorPoint],Error>) -> Void){
-        guard URL(string: "\(urlApi)") != nil else {
+        guard let url = urlApi  else {
             print ("Not found url")
             return
         }
         
-        URLSession.shared.dataTask(with: urlApi) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             if error != nil {
                 print("error", error?.localizedDescription ?? "")
                 return
@@ -30,12 +30,12 @@ final class CollectorPointService{
     }
     
     func post(parameters: [String: Any], completion: @escaping (Error?) -> ()){
-        guard URL(string: "\(urlApi)") != nil else {
+        guard let url = urlApi  else {
             print ("Not found url")
             return
         }
         
-        var urlRequest = URLRequest(url: urlApi)
+        var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"
         
         
@@ -59,15 +59,15 @@ final class CollectorPointService{
         }
     }
     
-    func put(parameters: [String: Any], completion: @escaping (Error?) -> ()) {
+    func put(parameters: [String: Any], completion: @escaping (Error) -> Void) {
         let updateURL = URL(string: "\(urlApi)\(String(describing: parameters["id"]!))/")
         
-        guard  updateURL != nil else {
+        guard  let url = updateURL  else {
             print ("not found url")
             return
         }
 
-        var urlRequest = URLRequest(url: updateURL!)
+        var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "PUT"
         
         do {
@@ -79,12 +79,9 @@ final class CollectorPointService{
             
             URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
                 if error != nil {
-                    print("error", error?.localizedDescription ?? "")
+                    print("error", error?.localizedDescription)
                     return
                 }
-                
-                guard data != nil else { return }
-                completion(nil)
             }.resume()
                 
         } catch {
@@ -93,9 +90,9 @@ final class CollectorPointService{
     }
     
     
-    func delete(id: Int, completion: @escaping (Error?) -> ()){
-        guard let url = URL(string: "\(urlApi)\(id)") else {
-            print ("Not found url")
+    func delete(id: Int, completion: @escaping (Error) -> Void){
+        guard  let url = urlApi  else {
+            print ("not found url")
             return
         }
         
@@ -106,7 +103,7 @@ final class CollectorPointService{
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             DispatchQueue.main.async {
                 if error != nil {
-                    print("error", error?.localizedDescription ?? "")
+                    print("error", error?.localizedDescription)
                     return
                 }
                     
@@ -115,8 +112,6 @@ final class CollectorPointService{
                     completion(NSError(domain: "", code: response.statusCode, userInfo: [NSLocalizedDescriptionKey: errorString]))
                     return
                 }
-                    
-                completion(nil)
             }
         }.resume()
     }

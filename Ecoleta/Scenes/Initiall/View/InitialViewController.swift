@@ -1,24 +1,31 @@
 import UIKit
 
-class InitialVC: UIViewController {
+
+protocol InitialViewControllerDelegate {
+    func getAllStates(completion: @escaping ((Error) -> Void))
+    func goToHome()
+    var stateList: [State] { get }
+    var citiesFromState: [City] { get  set}
+}
+
+
+class InitialViewController: UIViewController {
     
     private var initialView: InitialView
-    private let viewModel: InitialVM
     private var city: City?
+    private var delegate: InitialViewControllerDelegate
     
-    var stateList: [State] = []
-    var citiesFromState: [City] = []
+    
     
     //MARK: - Setup
     
-    init() {
-        self.viewModel = InitialVM()
-        self.initialView = InitialView()
+    init(view: InitialView) {
         super.init(nibName: nil, bundle: nil)
+        self.initialView = view
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
     
     
@@ -34,13 +41,9 @@ class InitialVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        viewModel.getAllStates() { success in
-            guard success != nil else {
-                print("Erro ao buscar estados")
-                return
-            }
-            self.stateList = success
+        delegate.getAllStates { success in
+            guard success != nil else { return }
+            self.present(Utilities.Alert(Title: "Erro", messageAlert: "Ocorreu um erro de nossa parte tente novamente mais tarde"), animated: true)
         }
     }
     
@@ -75,9 +78,7 @@ class InitialVC: UIViewController {
     
     @objc func tapButtonGoToHome(){
         guard initialView.selectCityField.text == "" else {
-            let homeScene = HomeVC(City: city!)
-            homeScene.modalPresentationStyle = .fullScreen
-            present(homeScene,animated: true)
+            delegate.goToHome()
             return
         }
         
@@ -86,7 +87,7 @@ class InitialVC: UIViewController {
 }
     // MARK: -  Extensions
 
-extension InitialVC: UIPickerViewDelegate, UIPickerViewDataSource {
+extension InitialViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -96,10 +97,10 @@ extension InitialVC: UIPickerViewDelegate, UIPickerViewDataSource {
 
         switch pickerView.tag {
         case initialView.pickerViewStates.tag:
-            return stateList.count
+            return delegate.stateList.count
         
         case initialView.pickerViewCity.tag:
-            return citiesFromState.count
+            return delegate.citiesFromState.count
         default:
             return initialView.pickerViewStates.tag
         }
@@ -109,10 +110,10 @@ extension InitialVC: UIPickerViewDelegate, UIPickerViewDataSource {
     
         switch pickerView.tag  {
         case initialView.pickerViewStates.tag:
-            return stateList[row].nameState
+            return delegate.stateList[row].nameState
         
         case initialView.pickerViewCity.tag:
-            return citiesFromState[row].nameCity
+            return delegate.citiesFromState[row].nameCity
         default:
             return "Date not found"
         }
@@ -122,13 +123,13 @@ extension InitialVC: UIPickerViewDelegate, UIPickerViewDataSource {
 
         switch pickerView.tag  {
         case initialView.pickerViewStates.tag:
-            initialView.selectStateField.text = stateList[row].nameState
+            initialView.selectStateField.text = delegate.stateList[row].nameState
             initialView.selectStateField.resignFirstResponder()
-            self.citiesFromState = stateList[row].cities
+            delegate.citiesFromState = delegate.stateList[row].cities
             view.endEditing(true)
         
         case initialView.pickerViewCity.tag:
-            let selectedCity = citiesFromState[row]
+            let selectedCity = delegate.citiesFromState[row]
             initialView.selectCityField.text = selectedCity.nameCity
             initialView.selectCityField.resignFirstResponder()
             city = selectedCity
